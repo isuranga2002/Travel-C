@@ -5,6 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize all components
+    initPreloader();
     initNavigation();
     initMobileMenu();
     initBookingForm();
@@ -12,13 +13,28 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
+ * Preloader Control
+ */
+function initPreloader() {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        window.addEventListener('load', () => {
+            preloader.classList.add('hidden');
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        });
+    }
+}
+
+/**
  * Navigation scroll effect
  */
 function initNavigation() {
     const navbar = document.querySelector('.navbar');
-    
+
     if (!navbar) return;
-    
+
     const handleScroll = () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -26,10 +42,10 @@ function initNavigation() {
             navbar.classList.remove('scrolled');
         }
     };
-    
+
     // Initial check
     handleScroll();
-    
+
     // Listen for scroll
     window.addEventListener('scroll', handleScroll);
 }
@@ -40,15 +56,15 @@ function initNavigation() {
 function initMobileMenu() {
     const toggle = document.querySelector('.mobile-nav-toggle');
     const navLinks = document.querySelector('.nav-links');
-    
+
     if (!toggle || !navLinks) return;
-    
+
     toggle.addEventListener('click', () => {
         toggle.classList.toggle('active');
         navLinks.classList.toggle('active');
         document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
     });
-    
+
     // Close menu when clicking a link
     navLinks.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
@@ -57,7 +73,7 @@ function initMobileMenu() {
             document.body.style.overflow = '';
         });
     });
-    
+
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {
         if (!toggle.contains(e.target) && !navLinks.contains(e.target)) {
@@ -73,12 +89,12 @@ function initMobileMenu() {
  */
 function initBookingForm() {
     const form = document.getElementById('booking-form');
-    
+
     if (!form) return;
-    
+
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         // Get form values
         const formData = new FormData(form);
         const data = {
@@ -92,7 +108,7 @@ function initBookingForm() {
             vehicle: formData.get('vehicle') || 'Any',
             notes: formData.get('notes') || 'None'
         };
-        
+
         // Format date nicely
         if (data.date && data.date !== 'Not specified') {
             const dateObj = new Date(data.date);
@@ -102,7 +118,7 @@ function initBookingForm() {
                 year: 'numeric'
             });
         }
-        
+
         // Build WhatsApp message
         const message = `Hello Travel C Sri Lanka,
 I want to book a taxi service.
@@ -121,13 +137,13 @@ Vehicle Type: ${data.vehicle}
 Notes: ${data.notes}
 
 Please confirm availability and pricing. Thank you!`;
-        
+
         // Encode message for URL
         const encodedMessage = encodeURIComponent(message);
-        
+
         // WhatsApp number (without + sign for URL)
         const whatsappNumber = '94712220002';
-        
+
         // Open WhatsApp
         window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
     });
@@ -150,34 +166,34 @@ function initScrollEffects() {
             }
         });
     });
-    
+
     // Reveal animations on scroll
     const revealElements = document.querySelectorAll('.service-card, .destination-card, .fleet-card, .why-us-item, .step-card, .fleet-page-card');
-    
+
     if (revealElements.length === 0) return;
-    
+
     const revealOnScroll = () => {
         revealElements.forEach(element => {
             const elementTop = element.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
-            
+
             if (elementTop < windowHeight - 100) {
                 element.style.opacity = '1';
                 element.style.transform = 'translateY(0)';
             }
         });
     };
-    
+
     // Set initial state
     revealElements.forEach(element => {
         element.style.opacity = '0';
         element.style.transform = 'translateY(20px)';
         element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     });
-    
+
     // Initial check
     revealOnScroll();
-    
+
     // Listen for scroll
     window.addEventListener('scroll', revealOnScroll);
 }
