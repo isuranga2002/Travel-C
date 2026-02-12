@@ -69,12 +69,19 @@
                 <img src="images/logo.png" alt="Travel C Sri Lanka" class="logo-image logo-image-scrolled">
             </a>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="packages.html">Packages</a></li>
-                <li><a href="vehicles.html">Vehicles</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://wa.me/94712220002" target="_blank" class="nav-btn">Book Now</a></li>
+                <li><a href="index.html" class="active" data-i18n="nav_home">Home</a></li>
+                <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                <li><a href="packages.html" data-i18n="nav_packages">Packages</a></li>
+                <li><a href="vehicles.html" data-i18n="nav_vehicles">Vehicles</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                <li><a href="https://wa.me/94712220002" target="_blank" class="nav-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                            height="18">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        <span data-i18n="nav_book">Book Now</span>
+                    </a></li>
             </ul>
             <div class="mobile-nav-toggle">
                 <span></span>
@@ -95,9 +102,11 @@
         <div class="hero-decoration"></div>
         <div class="hero-decoration"></div>
         <div class="hero-content">
-            <span class="hero-badge">Welcome to Sri Lanka</span>
-            <h1>Taxi and <span>Air Ticket</span> Service in Sri Lanka</h1>
-            <p class="hero-subtitle">Fast and reliable travel support in the Southern Province of Sri Lanka. Book your
+            <span class="hero-badge" data-i18n="hero_badge">Welcome to Sri Lanka</span>
+            <h1><span data-i18n="hero_title_1">Taxi and</span> <span data-i18n="hero_title_2">Air Ticket</span> <span
+                    data-i18n="hero_title_3">Service in Sri Lanka</span></h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Fast and reliable travel support in the Southern Province
+                of Sri Lanka. Book your
                 taxi ride or request air tickets easily through WhatsApp.</p>
             <div class="btn-group">
                 <a href="https://wa.me/94712220002?text=Hello%20Travel%20C%20Sri%20Lanka%2C%0AI%20want%20to%20book%20a%20taxi%20service.%0A%0APickup%20Location%3A%0ADrop%20Location%3A%0ADate%3A%0ATime%3A%0APassengers%3A%0AVehicle%20Type%3A%0ANotes%3A"
@@ -106,11 +115,11 @@
                         <path
                             d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                     </svg>
-                    Book on WhatsApp
+                    <span data-i18n="btn_whatsapp">Book on WhatsApp</span>
                 </a>
                 <a href="services.html" class="btn btn-secondary"
-                    style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.3);">View
-                    Services</a>
+                    style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.3);"
+                    data-i18n="btn_services">View Services</a>
             </div>
         </div>
     </section>
@@ -118,53 +127,49 @@
     <!-- About Section -->
     <section class="about-section">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-image">
-                    <div class="about-image-decoration"></div>
-                    <!-- Replace with your image: Recommended size 600x400px, max 500KB, JPG/PNG -->
-                    <img src="images/about-image.jpg" alt="Travel C Sri Lanka"
-                        style="border-radius: var(--radius-xl); width: 100%; height: 400px; object-fit: cover; background: var(--gradient-teal);">
-                </div>
-                <div class="about-content">
-                    <span class="section-badge">About Us</span>
-                    <h2>Welcome to <span>Travel C Sri Lanka</span></h2>
-                    <p>Travel C Sri Lanka provides trusted taxi services and air ticket support for tourists and local
-                        travelers. We focus mainly on the Southern Province of Sri Lanka and offer safe, comfortable,
-                        and affordable transport options.</p>
-                    <p>Our mission is to make your travel simple, fast, and stress free. Whether you need an airport
-                        transfer, a city ride, or a custom tour package, we are here to help.</p>
-                    <div class="about-features">
-                        <div class="about-feature">
-                            <div class="about-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg></div>
-                            <span>Fast Booking</span>
-                        </div>
-                        <div class="about-feature">
-                            <div class="about-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg></div>
-                            <span>Clean Vehicles</span>
-                        </div>
-                        <div class="about-feature">
-                            <div class="about-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg></div>
-                            <span>Friendly Drivers</span>
-                        </div>
-                        <div class="about-feature">
-                            <div class="about-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg></div>
-                            <span>Best Prices</span>
-                        </div>
+            <div class="about-content centered-content">
+                <span class="section-badge" data-i18n="about_badge">About Us</span>
+                <h2><span data-i18n="about_title_1">Welcome to</span> <span data-i18n="about_title_2">Travel C Sri
+                        Lanka</span></h2>
+                <p data-i18n="about_text_1">Travel C Sri Lanka provides trusted taxi services and air ticket support
+                    for tourists and local
+                    travelers. We focus mainly on the Southern Province of Sri Lanka and offer safe, comfortable,
+                    and affordable transport options.</p>
+                <p data-i18n="about_text_2">Our mission is to make your travel simple, fast, and stress free.
+                    Whether you need an airport
+                    transfer, a city ride, or a custom tour package, we are here to help.</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <div class="about-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg></div>
+                        <span data-i18n="feat_fast">Fast Booking</span>
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg></div>
+                        <span data-i18n="feat_clean">Clean Vehicles</span>
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg></div>
+                        <span data-i18n="feat_friendly">Friendly Drivers</span>
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg></div>
+                        <span data-i18n="feat_price">Best Prices</span>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -172,9 +177,10 @@
     <section class="services-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Our Services</span>
-                <h2>What We Offer</h2>
-                <p>We provide comprehensive travel services to make your journey in Sri Lanka comfortable and
+                <span class="section-badge" data-i18n="serv_badge">Our Services</span>
+                <h2 data-i18n="serv_title">What We Offer</h2>
+                <p data-i18n="serv_subtitle">We provide comprehensive travel services to make your journey in Sri Lanka
+                    comfortable and
                     hassle-free.</p>
             </div>
             <div class="services-grid">
@@ -186,8 +192,9 @@
                             <circle cx="7" cy="17" r="2" />
                             <circle cx="17" cy="17" r="2" />
                         </svg></div>
-                    <h3>Taxi Service</h3>
-                    <p>Airport transfers, city rides, long distance travel, and custom tours. Comfortable vehicles for
+                    <h3 data-i18n="serv_taxi_title">Taxi Service</h3>
+                    <p data-i18n="serv_taxi_desc">Airport transfers, city rides, long distance travel, and custom tours.
+                        Comfortable vehicles for
                         all your transport needs.</p>
                 </div>
                 <div class="service-card">
@@ -197,8 +204,9 @@
                                 d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
                             <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" />
                         </svg></div>
-                    <h3>Air Ticket Service</h3>
-                    <p>Fast air ticket support for local and international travel. We help you find the best flight
+                    <h3 data-i18n="serv_air_title">Air Ticket Service</h3>
+                    <p data-i18n="serv_air_desc">Fast air ticket support for local and international travel. We help you
+                        find the best flight
                         options.</p>
                 </div>
                 <div class="service-card">
@@ -207,8 +215,9 @@
                             <circle cx="12" cy="10" r="3" />
                             <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" />
                         </svg></div>
-                    <h3>Southern Province Travel</h3>
-                    <p>We know the best routes and destinations in Southern Sri Lanka. Expert local knowledge for your
+                    <h3 data-i18n="serv_south_title">Southern Province Travel</h3>
+                    <p data-i18n="serv_south_desc">We know the best routes and destinations in Southern Sri Lanka.
+                        Expert local knowledge for your
                         travels.</p>
                 </div>
             </div>
@@ -295,12 +304,7 @@
                 <div class="gallery-item">
                     <img src="images/gallery-23.jpg" alt="Minneriya Elephant Safari Sri Lanka">
                 </div>
-                <div class="gallery-item">
-                    <img src="images/gallery-24.jpg" alt="Coconut Tree Hill Mirissa Sri Lanka">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery-25.jpg" alt="Ramboda Falls Sri Lanka">
-                </div>
+
                 <!-- Duplicate set for seamless loop -->
                 <div class="gallery-item">
                     <img src="images/gallery-1.jpg" alt="Sigiriya Rock Fortress Sri Lanka">
@@ -371,12 +375,7 @@
                 <div class="gallery-item">
                     <img src="images/gallery-23.jpg" alt="Minneriya Elephant Safari Sri Lanka">
                 </div>
-                <div class="gallery-item">
-                    <img src="images/gallery-24.jpg" alt="Coconut Tree Hill Mirissa Sri Lanka">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery-25.jpg" alt="Ramboda Falls Sri Lanka">
-                </div>
+
             </div>
         </div>
     </section>
@@ -385,11 +384,12 @@
     <section class="destinations-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Coverage Area</span>
-                <h2>Popular Destinations We Cover</h2>
-                <p>We serve all major destinations in the Southern Province and beyond.</p>
+                <span class="section-badge" data-i18n="dest_badge">Coverage Area</span>
+                <h2 data-i18n="dest_title">Popular Destinations We Cover</h2>
+                <p data-i18n="dest_subtitle">We serve all major destinations in the Southern Province and beyond.</p>
             </div>
             <div class="destinations-grid">
+                <!-- Original Destinations -->
                 <div class="destination-card">
                     <img src="images/dest-galle.jpg" alt="Galle">
                     <div class="destination-card-overlay">
@@ -438,10 +438,85 @@
                         <h4>Hambantota</h4>
                     </div>
                 </div>
+
+                <!-- New Destinations with Generated Images -->
+                <div class="destination-card">
+                    <img src="images/dest-kandy.jpg" alt="Kandy">
+                    <div class="destination-card-overlay">
+                        <h4>Kandy</h4>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/dest-trincomalee.jpg" alt="Trincomalee">
+                    <div class="destination-card-overlay">
+                        <h4>Trincomalee</h4>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/dest-ella.jpg" alt="Ella">
+                    <div class="destination-card-overlay">
+                        <h4>Ella</h4>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/dest-sigiriya.jpg" alt="Sigiriya">
+                    <div class="destination-card-overlay">
+                        <h4>Sigiriya</h4>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/dest-nuwara-eliya.jpg" alt="Nuwara Eliya">
+                    <div class="destination-card-overlay">
+                        <h4>Nuwara Eliya</h4>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/dest-anuradhapura.jpg" alt="Anuradhapura">
+                    <div class="destination-card-overlay">
+                        <h4>Anuradhapura</h4>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/dest-yala.jpg" alt="Yala National Park">
+                    <div class="destination-card-overlay">
+                        <h4>Yala National Park</h4>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/dest-bentota.jpg" alt="Bentota">
+                    <div class="destination-card-overlay">
+                        <h4>Bentota</h4>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/dest-colombo.jpg" alt="Colombo">
+                    <div class="destination-card-overlay">
+                        <h4>Colombo</h4>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/dest-polonnaruwa.jpg" alt="Polonnaruwa">
+                    <div class="destination-card-overlay">
+                        <h4>Polonnaruwa</h4>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/gallery-9.jpg" alt="Dambulla">
+                    <div class="destination-card-overlay">
+                        <h4>Dambulla</h4>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/gallery-23.jpg" alt="Minneriya">
+                    <div class="destination-card-overlay">
+                        <h4>Minneriya</h4>
+                    </div>
+                </div>
             </div>
             <div class="destinations-note">
-                <p>Need another destination? Contact us anytime!</p>
-                <a href="https://wa.me/94712220002" target="_blank" class="btn btn-primary">Ask on WhatsApp</a>
+                <p data-i18n="dest_note">Need another destination? Contact us anytime!</p>
+                <a href="https://wa.me/94712220002" target="_blank" class="btn btn-primary" data-i18n="btn_ask">Ask on
+                    WhatsApp</a>
             </div>
         </div>
     </section>
@@ -450,9 +525,10 @@
     <section class="why-us-section" style="background: var(--light);">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Why Us</span>
-                <h2>Why Choose Travel C Sri Lanka?</h2>
-                <p>Here's what makes us the preferred choice for travelers in Southern Sri Lanka.</p>
+                <span class="section-badge" data-i18n="why_badge">Why Us</span>
+                <h2 data-i18n="why_title">Why Choose Travel C Sri Lanka?</h2>
+                <p data-i18n="why_subtitle">Here's what makes us the preferred choice for travelers in Southern Sri
+                    Lanka.</p>
             </div>
             <div class="why-us-grid">
                 <div class="why-us-item">
@@ -461,8 +537,9 @@
                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                         </svg></div>
                     <div class="why-us-content">
-                        <h4>Quick WhatsApp Booking</h4>
-                        <p>Book your ride instantly through WhatsApp. Fast response guaranteed.</p>
+                        <h4 data-i18n="why_quick_title">Quick WhatsApp Booking</h4>
+                        <p data-i18n="why_quick_desc">Book your ride instantly through WhatsApp. Fast response
+                            guaranteed.</p>
                     </div>
                 </div>
                 <div class="why-us-item">
@@ -474,8 +551,8 @@
                             <circle cx="17" cy="17" r="2" />
                         </svg></div>
                     <div class="why-us-content">
-                        <h4>Clean & Comfortable Vehicles</h4>
-                        <p>Well-maintained vehicles for a comfortable journey every time.</p>
+                        <h4 data-i18n="why_clean_title">Clean & Comfortable Vehicles</h4>
+                        <p data-i18n="why_clean_desc">Well-maintained vehicles for a comfortable journey every time.</p>
                     </div>
                 </div>
                 <div class="why-us-item">
@@ -487,8 +564,9 @@
                             <line x1="15" y1="9" x2="15.01" y2="9" />
                         </svg></div>
                     <div class="why-us-content">
-                        <h4>Friendly & Reliable Service</h4>
-                        <p>Professional drivers who prioritize your comfort and safety.</p>
+                        <h4 data-i18n="why_friendly_title">Friendly & Reliable Service</h4>
+                        <p data-i18n="why_friendly_desc">Professional drivers who prioritize your comfort and safety.
+                        </p>
                     </div>
                 </div>
                 <div class="why-us-item">
@@ -498,8 +576,9 @@
                             <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
                         </svg></div>
                     <div class="why-us-content">
-                        <h4>Affordable Pricing</h4>
-                        <p>Competitive rates with no hidden charges. Best value for your money.</p>
+                        <h4 data-i18n="why_price_title">Affordable Pricing</h4>
+                        <p data-i18n="why_price_desc">Competitive rates with no hidden charges. Best value for your
+                            money.</p>
                     </div>
                 </div>
                 <div class="why-us-item">
@@ -509,8 +588,8 @@
                             <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
                         </svg></div>
                     <div class="why-us-content">
-                        <h4>Experienced Drivers</h4>
-                        <p>Local drivers who know the best routes and destinations.</p>
+                        <h4 data-i18n="why_exp_title">Experienced Drivers</h4>
+                        <p data-i18n="why_exp_desc">Local drivers who know the best routes and destinations.</p>
                     </div>
                 </div>
                 <div class="why-us-item">
@@ -520,8 +599,18 @@
                                 d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                         </svg></div>
                     <div class="why-us-content">
-                        <h4>Airport Pickup & Drop</h4>
-                        <p>Reliable airport transfers to and from all major airports.</p>
+                        <h4 data-i18n="why_airport_title">Airport Pickup & Drop</h4>
+                        <p data-i18n="why_airport_desc">Reliable airport transfers to and from all major airports.</p>
+                    </div>
+                </div>
+                <div class="why-us-item">
+                    <div class="why-us-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg></div>
+                    <div class="why-us-content">
+                        <h4 data-i18n="why_lang_title">Language Experts</h4>
+                        <p data-i18n="why_lang_desc">We have English, Cantonese, Hindi, and Urdu speaking drivers.</p>
                     </div>
                 </div>
             </div>
@@ -532,38 +621,38 @@
     <section class="fleet-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Our Fleet</span>
-                <h2>Our Vehicle Options</h2>
-                <p>Choose from our range of comfortable and well-maintained vehicles.</p>
+                <span class="section-badge" data-i18n="fleet_badge">Our Fleet</span>
+                <h2 data-i18n="fleet_title">Our Vehicle Options</h2>
+                <p data-i18n="fleet_subtitle">Choose from our range of comfortable and well-maintained vehicles.</p>
             </div>
             <div class="fleet-grid">
                 <div class="fleet-card">
                     <div class="fleet-card-image"><img src="images/vehicle-wagonr.jpg" alt="Suzuki WagonR"
                             style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
-                    <h4>Suzuki WagonR</h4>
-                    <p>Budget friendly, ideal for short trips</p>
+                    <h4 data-i18n="fleet_wagonr">Suzuki WagonR</h4>
+                    <p data-i18n="fleet_wagonr_desc">Budget friendly, ideal for short trips</p>
                 </div>
                 <div class="fleet-card">
                     <div class="fleet-card-image"><img src="images/vehicle-prius.jpg" alt="Toyota Prius"
                             style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
-                    <h4>Toyota Prius</h4>
-                    <p>Comfortable ride for couples and small families</p>
+                    <h4 data-i18n="fleet_prius">Toyota Prius</h4>
+                    <p data-i18n="fleet_prius_desc">Comfortable ride for couples and small families</p>
                 </div>
                 <div class="fleet-card">
                     <div class="fleet-card-image"><img src="images/vehicle-kdh.jpg" alt="Toyota KDH Van"
                             style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
-                    <h4>Toyota KDH Van</h4>
-                    <p>Spacious van for group travel</p>
+                    <h4 data-i18n="fleet_kdh">Toyota KDH Van</h4>
+                    <p data-i18n="fleet_kdh_desc">Spacious van for group travel</p>
                 </div>
                 <div class="fleet-card">
                     <div class="fleet-card-image"><img src="images/vehicle-shuttle.jpg" alt="Honda Shuttle"
                             style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
-                    <h4>Honda Shuttle</h4>
-                    <p>Family vehicle with extra space</p>
+                    <h4 data-i18n="fleet_shuttle">Honda Shuttle</h4>
+                    <p data-i18n="fleet_shuttle_desc">Family vehicle with extra space</p>
                 </div>
             </div>
             <div class="fleet-cta">
-                <a href="vehicles.html" class="btn btn-gold">View All Vehicle Types</a>
+                <a href="vehicles.html" class="btn btn-gold" data-i18n="btn_all_vehicles">View All Vehicle Types</a>
             </div>
         </div>
     </section>
@@ -572,8 +661,9 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to Travel?</h2>
-                <p>Send your pickup and drop location with your travel date. We will reply quickly and confirm your
+                <h2 data-i18n="cta_title">Ready to Travel?</h2>
+                <p data-i18n="cta_text">Send your pickup and drop location with your travel date. We will reply quickly
+                    and confirm your
                     booking.</p>
                 <div class="btn-group">
                     <a href="https://wa.me/94712220002?text=Hello%20Travel%20C%20Sri%20Lanka%2C%0AI%20want%20to%20book%20a%20taxi%20service.%0A%0APickup%20Location%3A%0ADrop%20Location%3A%0ADate%3A%0ATime%3A%0APassengers%3A%0AVehicle%20Type%3A%0ANotes%3A"
@@ -582,9 +672,10 @@
                             <path
                                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                         </svg>
-                        WhatsApp Booking
+                        <span data-i18n="btn_whatsapp">WhatsApp Booking</span>
                     </a>
-                    <a href="contact.html" class="btn" style="background: rgba(255,255,255,0.15); color: white;">Contact
+                    <a href="contact.html" class="btn" style="background: rgba(255,255,255,0.15); color: white;"
+                        data-i18n="btn_contact">Contact
                         Us</a>
                 </div>
             </div>
@@ -599,59 +690,98 @@
                     <a href="index.html" class="logo">
                         <img src="images/logo-white.png" alt="Travel C Sri Lanka" class="logo-image">
                     </a>
-                    <p>Your trusted taxi and air ticket service provider in Southern Sri Lanka. Fast, reliable, and
+                    <p data-i18n="footer_about">Your trusted taxi and air ticket service provider in Southern Sri Lanka.
+                        Fast, reliable, and
                         affordable travel solutions.</p>
                 </div>
                 <div class="footer-column">
-                    <h4>Quick Links</h4>
+                    <h4 data-i18n="footer_quick">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="vehicles.html">Vehicle Types</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                        <li><a href="vehicles.html" data-i18n="nav_vehicles">Vehicle Types</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Services</h4>
+                    <h4 data-i18n="footer_serv">Services</h4>
                     <ul class="footer-links">
-                        <li><a href="services.html">Taxi Service</a></li>
-                        <li><a href="services.html">Airport Transfers</a></li>
-                        <li><a href="services.html">Air Tickets</a></li>
-                        <li><a href="services.html">Custom Tours</a></li>
+                        <li><a href="services.html" data-i18n="serv_taxi_title">Taxi Service</a></li>
+                        <li><a href="services.html" data-i18n="why_airport_title">Airport Transfers</a></li>
+                        <li><a href="services.html" data-i18n="serv_air_title">Air Tickets</a></li>
+                        <li><a href="services.html" data-i18n="serv_custom_tours">Custom Tours</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Contact Us</h4>
+                    <h4 data-i18n="footer_contact">Contact Us</h4>
                     <div class="footer-contact-item">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)"
-                            stroke-width="2">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path
                                 d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                         </svg>
                         <span>+94 71 222 0002</span>
                     </div>
                     <div class="footer-contact-item">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)"
-                            stroke-width="2">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                         </svg>
-                        <a href="https://wa.me/94712220002" target="_blank" style="color: #25D366;">WhatsApp</a>
+                        <a href="https://wa.me/94712220002" target="_blank" class="hover-link">WhatsApp: +94 71 222
+                            0002</a>
                     </div>
                     <div class="footer-contact-item">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)"
-                            stroke-width="2">
-                            <circle cx="12" cy="10" r="3" />
-                            <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" />
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <a href="mailto:travelclanka@gmail.com" class="hover-link">travelclanka@gmail.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
                         </svg>
                         <span>Southern Province, Sri Lanka</span>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/TravelCLanka" target="_blank" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/travelclanka/" target="_blank" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/94712220002" target="_blank" aria-label="WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                </path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Travel C Sri Lanka. All Rights Reserved.</p>
+                <p data-i18n="footer_rights">&copy; 2026 Travel C Sri Lanka. All Rights Reserved.</p>
                 <div class="footer-bottom-links">
-                    <a href="contact.html">Contact</a>
-                    <a href="services.html">Services</a>
+                    <a href="contact.html" data-i18n="nav_contact">Contact</a>
+                    <a href="services.html" data-i18n="nav_services">Services</a>
                 </div>
             </div>
         </div>
