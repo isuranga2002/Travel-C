@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://isuranga2002.github.io/Travel-C/sitemap.xml
+Sitemap: https://travelclanka.com/sitemap.xml
+Allow: /llms.txt
