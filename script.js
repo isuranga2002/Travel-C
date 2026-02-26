@@ -17,14 +17,19 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 function initPreloader() {
     const preloader = document.getElementById('preloader');
-    if (preloader) {
-        window.addEventListener('load', () => {
-            preloader.classList.add('hidden');
-            setTimeout(() => {
-                preloader.style.display = 'none';
-            }, 500);
-        });
+    if (!preloader) return;
+
+    function hidePreloader() {
+        preloader.classList.add('hidden');
+        setTimeout(() => { preloader.style.display = 'none'; }, 500);
     }
+
+    // Hide when page loads OR after 2 seconds max — whichever comes first
+    const maxWait = setTimeout(hidePreloader, 2000);
+    window.addEventListener('load', () => {
+        clearTimeout(maxWait);
+        hidePreloader();
+    });
 }
 
 /**
