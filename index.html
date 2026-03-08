@@ -15,14 +15,16 @@
         content="Trusted taxi, tour packages & air ticket service in Sri Lanka. Book via WhatsApp. Airport transfers, private tours, Sigiriya, Ella, Kandy, Galle.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://travelclanka.com/">
-    <meta property="og:image" content="https://travelclanka.com/images/logo.png">
+    <meta property="og:image" content="https://travelclanka.com/images/hero-bg.jpg">
     <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Travel C Sri Lanka">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Travel C Sri Lanka | Taxi & Tour Service">
     <meta name="twitter:description"
         content="Trusted taxi, tour packages & air ticket service in Sri Lanka. Book via WhatsApp instantly.">
+    <meta name="twitter:image" content="https://travelclanka.com/images/hero-bg.jpg">
 
     <!-- Additional SEO -->
     <meta name="robots" content="index, follow">
@@ -31,21 +33,30 @@
     <meta name="geo.placename" content="Southern Province, Sri Lanka">
     <link rel="canonical" href="https://travelclanka.com/">
 
-    <title>Travel C Sri Lanka | #1 Taxi & Tour Service | Airport Transfers | Tour Packages</title>
+    <title>Travel C Sri Lanka | Taxi, Airport Transfers & Tour Packages</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "TravelAgency",
+        "@id": "https://travelclanka.com/#organization",
         "name": "Travel C Sri Lanka",
         "description": "Trusted taxi, tour packages and air ticket service in Southern Sri Lanka",
         "url": "https://travelclanka.com/",
         "telephone": "+94712220002",
         "email": "travelclanka@gmail.com",
-        "image": "https://travelclanka.com/images/logo.png",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://travelclanka.com/images/favicon-192.png",
+            "width": 192,
+            "height": 192
+        },
+        "image": "https://travelclanka.com/images/hero-bg.jpg",
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
@@ -75,8 +86,20 @@
             "https://www.facebook.com/TravelCLanka",
             "https://www.instagram.com/travelclanka/"
         ],
-        "areaServed": "Sri Lanka",
-        "serviceType": ["Taxi Service", "Airport Transfer", "Tour Packages", "Air Tickets"]
+        "areaServed": {
+            "@type": "Country",
+            "name": "Sri Lanka"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Travel Services",
+            "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Taxi Service"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Airport Transfer"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tour Packages"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Air Ticket Booking"}}
+            ]
+        }
     }
     </script>
 </head>
@@ -90,12 +113,12 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="logo">
+            <a href="/" class="logo">
                 <img src="images/logo-white.png" alt="Travel C Sri Lanka" class="logo-image logo-image-landing">
                 <img src="images/logo.png" alt="Travel C Sri Lanka" class="logo-image logo-image-scrolled">
             </a>
             <ul class="nav-links">
-                <li><a href="index.html" class="active" data-i18n="nav_home">Home</a></li>
+                <li><a href="/" class="active" data-i18n="nav_home">Home</a></li>
                 <li><a href="services.html" data-i18n="nav_services">Services</a></li>
                 <li><a href="packages.html" data-i18n="nav_packages">Packages</a></li>
                 <li><a href="vehicles.html" data-i18n="nav_vehicles">Vehicles</a></li>
@@ -983,7 +1006,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo">
+                    <a href="/" class="logo">
                         <img src="images/logo-white.png" alt="Travel C Sri Lanka" class="logo-image">
                     </a>
                     <p data-i18n="footer_about">Your trusted taxi and air ticket service provider in Southern Sri Lanka.
@@ -993,7 +1016,7 @@
                 <div class="footer-column">
                     <h4 data-i18n="footer_quick">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="/" data-i18n="nav_home">Home</a></li>
                         <li><a href="services.html" data-i18n="nav_services">Services</a></li>
                         <li><a href="vehicles.html" data-i18n="nav_vehicles">Vehicle Types</a></li>
                         <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>

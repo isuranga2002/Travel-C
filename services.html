@@ -15,25 +15,81 @@
         content="Travel C Sri Lanka services - Taxi service and air ticket booking for tourists and local travelers in Southern Sri Lanka.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://travelclanka.com/services.html">
-    <meta property="og:image" content="https://travelclanka.com/images/logo.png">
+    <meta property="og:image" content="https://travelclanka.com/images/service-taxi.jpg">
     <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Travel C Sri Lanka">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Services | Travel C Sri Lanka">
+    <meta name="twitter:description" content="Taxi service and air ticket booking for tourists and local travelers in Southern Sri Lanka.">
+    <meta name="twitter:image" content="https://travelclanka.com/images/service-taxi.jpg">
+
+    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Travel C Sri Lanka">
 
     <link rel="canonical" href="https://travelclanka.com/services.html">
 
-    <title>Our Services | Travel C Sri Lanka</title>
+    <title>Taxi & Air Ticket Services | Travel C Sri Lanka</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://travelclanka.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://travelclanka.com/services.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": ["Taxi Service", "Airport Transfer", "Air Ticket Booking"],
+        "provider": {
+          "@type": "TravelAgency",
+          "@id": "https://travelclanka.com/#organization",
+          "name": "Travel C Sri Lanka",
+          "url": "https://travelclanka.com/",
+          "telephone": "+94712220002"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Sri Lanka"
+        },
+        "url": "https://travelclanka.com/services.html",
+        "name": "Taxi & Air Ticket Services - Travel C Sri Lanka",
+        "description": "Reliable taxi service, airport transfers, and air ticket booking for tourists and local travelers in Southern Sri Lanka."
+      }
+    ]
+    </script>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="logo">
+            <a href="/" class="logo">
                 <img src="images/logo-white.png" alt="Travel C Sri Lanka" class="logo-image logo-image-landing">
                 <img src="images/logo.png" alt="Travel C Sri Lanka" class="logo-image logo-image-scrolled">
             </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="services.html" class="active">Services</a></li>
                 <li><a href="packages.html">Packages</a></li>
                 <li><a href="vehicles.html">Vehicles</a></li>
@@ -204,7 +260,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo"><img src="images/logo-white.png" alt="Travel C Sri Lanka"
+                    <a href="/" class="logo"><img src="images/logo-white.png" alt="Travel C Sri Lanka"
                             class="logo-image"></a>
                     <p>Your trusted taxi and tour service in Sri Lanka. Fast, reliable, and
                         affordable travel solutions.</p>
@@ -212,7 +268,7 @@
                 <div class="footer-column">
                     <h4 data-i18n="footer_quick">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="/" data-i18n="nav_home">Home</a></li>
                         <li><a href="services.html" data-i18n="nav_services">Services</a></li>
                         <li><a href="vehicles.html" data-i18n="nav_vehicles">Vehicle Types</a></li>
                         <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
